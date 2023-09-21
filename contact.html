@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="images/receiver.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <style>
+        /*navigation */
+       
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-items {
+            padding: 0px 54px 0px 0px;
+            list-style: none;
+        }
+        
+        .list-items {
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4E4FEB;
+            font-weight: bolder;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration:double;
+            color: black;
+            
+        }
+
+        img {
+            width: 90px;
+            height: 50%;
+            padding: 0px 0px 0px 30px;
+        }
+
+        /****************/
+        .contact-img {
+            height: 62px;
+            width: 66%;
+        }
+        
+
+        .contact {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 30px;
+        }
+
+        .notes {
+            opacity: 0;
+            position: sticky;
+            /* font-size: 2rem; */
+            pointer-events: none;
+            background-color: rgb(115, 179, 243);
+            margin-left: 30px;
+        }
+
+        .mail:hover .notes,
+        .linkedin:hover .notes,
+        .instagrm:hover .notes,
+        .cv:hover .notes,
+        .github:hover .notes,
+        .whatsapp:hover .notes {
+            opacity: 1;
+        }
+
+        input {
+            border-radius: 7px;
+            height: 30px;
+            margin-left: 26px;
+            border-style: hidden;
+            /* border-width: 10px; */
+            width: 100%;
+
+        }
+
+        .responsehead {
+            border: hidden;
+            border-style: hidden;
+            padding: 100px 10px 10px 10px;
+            text-align: center;
+            color: #4E4FEB;
+        }
+
+        .inputfields {
+            display: flex;
+            /* justify-content: first baseline; */
+            border-style: outset;
+            padding: 10px 0px 0px 0px;
+            margin: 60px 100px 10px 100px;
+            height: 300px;
+        }
+        .right{
+            margin: 20px 20px 20px 20px;
+            background-color: rgb(219, 217, 214);
+            width: 100%;
+            
+
+        }
+        .left{
+            display: flex;
+            padding: 50px 100px 20px 10px;
+            /* justify-content: center; */
+        }
+        textarea{
+            margin: 1px 0px 0px 35px;
+            width: 82%;
+            border: hidden;
+            border-radius: 7px;
+            resize: none;
+            
+        }
+        #sub{
+            width: 10%;
+            border-style: hidden;
+            background-color: #4E4FEB;
+            color: aliceblue;
+            margin: 20px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            height: 35px;
+        }
+        #sub:hover{
+            background-color: red;
+        }
+    </style> -->
+</head>
+
+<body>
+    <nav>
+        <div class="image">
+            <img src="images/S.png" alt="">
+        </div>
+        <div class="navigate">
+            <ul class="list-items">
+                <li class="nav-items"><a href="portfolio.html">Home</a></li>
+                <li class="nav-items"><a href="aboutme.html">About Me</a></li>
+                <li class="nav-items"><a href="education.html">Education</a></li>
+                <li class="nav-items"><a href="projects.html">Projects</a></li>
+                <li class="nav-items"><a href="certificate.html">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="contact">
+        <div class="mail">
+            <a href="mailto:sahasgowda81@gmail.com"><img class="contact-img" src="images/gmail.png" alt=""></a>
+            <div class="notes">click me!</div>
+        </div>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/sahas-h-s-9a833b247/" target="_blank"><img class="contact-img"
+                    src="images/linkedin.png" alt=""></a>
+            <div class="notes">click me!</div>
+        </div>
+        <div class="instagrm">
+            <a href="https://instagram.com/sahas_gowda?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" target="_blank"><img
+                    class="contact-img" src="images/instagram.png" alt=""></a>
+            <div class="notes">click me!</div>
+        </div>
+        <div class="whatsapp">
+            <a href="tel:7760694961" target="_blank"><img class="contact-img" src="images/receiver.png" alt=""></a>
+            <div class="notes">click me!</div>
+
+        </div>
+        <div class="github">
+            <a href="https://github.com/SAHAShs" target="_blank"><img class="contact-img" src="images/github.png" alt=""></a>
+            <div class="notes">click me!</div>
+
+        </div>
+        <div class="cv">
+            <a href="Sahas_H_S-ECE.pdf" target="_blank"><img class="contact-img" src="images/cv.png" alt=""></a>
+            <div class="notes">click me!</div>
+        </div>
+        <div class="cv">
+            <a href="https://youtube.com/@Sahas_H_S?si=uL_eHEhXl7RFSRuH" target="_blank"><img class="contact-img"
+                    src="images/youtube.png" alt=""></a>
+            <div class="notes">click me!</div>
+        </div>
+
+    </main>
+    <form action="" method="post">
+        <div class="inputfields">
+            <div class="responsehead">
+                <H1>Leave your Feedback</H1>
+            </div>
+            <div class="right">
+                <div class="left">
+                    <input type="text" name="fname" id="fname" placeholder="Your name">
+                    <input type="email" name="email" id="email" placeholder="hello@gmail.com">
+                </div>
+                <div class="text">
+                    <textarea name="feed" id="feed" cols="30" rows="5"  placeholder="Feedback....."></textarea>
+                    
+                </div> <input type="submit" value="submit" id="sub">
+            </div>
+        </div>
+
+
+       
+    </form>
+
+</body>
+
+</html>

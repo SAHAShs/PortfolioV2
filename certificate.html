@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate's</title>
+    <link rel="icon" href="images/certificate.png">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- <style>
+         /*navigation */
+         nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-items {
+            padding: 17px 54px 0px 0px;
+            list-style: none;
+        }
+
+        .list-items {
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4E4FEB;
+            font-weight: bolder;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration:double;
+            color: black;
+            
+        }
+
+        img {
+            width: 90px;
+            height: 50%;
+            padding: 0px 0px 0px 30px;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+        }
+
+        .img1{
+            width: 70%;
+            margin-top: 50px;
+            height: 400px;
+            padding: 0px 30px 0px 30px
+        }
+        button{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            opacity: 0.7;
+            border: none;
+            margin-top: 250px;
+            background-color: rgb(215, 242, 243);
+        }
+    </style> -->
+
+    
+</head>
+<body>
+    <nav>
+        <div class="image">
+            <!-- <img src="S.png" alt=""> -->
+        </div>
+        <div class="navigate cert-nav">
+            <ul class="list-items">
+                <li class="nav-items"><a href="portfolio.html">Home</a></li>
+                <li class="nav-items"><a href="aboutme.html" >About Me</a></li>
+                <li class="nav-items"><a href="education.html">Education</a></li>
+                <li class="nav-items"><a href="projects.html">Projects</a></li>
+                <li class="nav-items"><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="certi-main">
+        <button type="submit" onclick="moveback()"><b><</b></button>
+        <img src="certificates/certificate_Basic Coding Course_337045.png" alt="" class="img1" onmouseout="start()" onmouseover="stop()">
+        <button type="submit"onclick="movefront()"><b>></b></button>
+
+    <script type="text/javascript">
+        var arr=new Array("certificates/certificate_Basic Coding Course_337045.png","certificates/certificate_C Programming_337045.png","certificates/javascript-essentials-1.png","certificates/certificate_Git_337045.png","certificates/certificate_Intermediate Coding in Java_337045.png","certificates/certificate_Java Script Es6_337045.png","certificates/certificate_SQL_337045.png","certificates/Screenshot 2023-09-20 211517.png","certificates/Screenshot 2023-09-20 211333.png","certificates/javaoops_GL.jpg","certificates/java_GL.jpg");
+        var i=0;
+        var ref;
+        function movefront(){
+            document.images[0].src=arr[i++];
+            if(i>arr.length-1){
+                i=0;
+            }
+
+        }
+        function moveback(){
+            document.images[0].src=arr[i--];
+            if(i<=0){
+                i=arr.length-1;
+            }
+
+        }
+    </script>
+    
+
+    </main>
+    
+</body>
+</html>
