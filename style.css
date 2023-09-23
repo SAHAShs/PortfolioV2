@@ -9,6 +9,7 @@ nav {
 .list-items {
     display: flex;
     /* justify-content: space-evenly; */
+    overflow: hidden;
 }
 
 .nav-items {
@@ -28,11 +29,12 @@ nav a {
     font-size: 1.3rem;
 }
 
-nav a:hover {
+nav a:hover,
+.nav-items:hover {
     text-decoration: double;
     color: black;
     /* color: #D83F31; */
-
+    scale: 1.2;
 }
 
 img {
@@ -99,6 +101,7 @@ img {
     border-color: #D83F31;
     margin-top: 20px;
     text-align: justify;
+    overflow: hidden;
 }
 
 .education legend {
@@ -114,6 +117,11 @@ img {
 .edu-description {
     font-size: 1rem;
     line-height: 20px;
+    overflow: hidden;
+}
+.edu-description:hover {
+    scale: 1.2;
+    color: rgb(92, 111, 198);
 }
 
 
@@ -128,9 +136,6 @@ img {
     width: max-content;
 }
 
-
-
-
 .mypic {
     width: 100px;
     height: 100px;
@@ -139,6 +144,9 @@ img {
     overflow: hidden;
     margin-top: 10px;
     padding: 0px;
+}
+.mypic:hover {
+   scale: 2.5;
 }
 
 .section1 {
@@ -194,6 +202,15 @@ iframe {
 .whatsapp:hover .notes {
     opacity: 1;
 }
+.mail:hover .contact-img,
+.linkedin:hover .contact-img,
+.instagrm:hover .contact-img,
+.cv:hover .contact-img,
+.github:hover .contact-img,
+.whatsapp:hover .contact-img {
+    /* opacity: 1; */
+    scale: 0.8;
+}
 
 input {
     border-radius: 7px;
@@ -225,6 +242,7 @@ input {
     margin: 60px 100px 10px 100px;
     height: 300px;
 }
+
 
 .right {
     margin: 20px 20px 20px 20px;
@@ -262,6 +280,10 @@ textarea {
 
 #sub:hover {
     background-color: red;
+}
+#sub:active {
+    background-color: rgb(246, 129, 129);
+    scale: 1.2;
 }
 
 
@@ -306,4 +328,7 @@ textarea {
 
 .projects button:hover {
     background-color: red;
+}
+.projects button:active {
+    scale: 0.9;
 }
