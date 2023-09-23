@@ -30,7 +30,8 @@ nav a {
 }
 
 nav a:hover,
-.nav-items:hover {
+.nav-items:hover 
+{
     text-decoration: double;
     color: black;
     /* color: #D83F31; */
@@ -49,11 +50,38 @@ img {
     font-size: 4rem;
     padding: 110px 0px 0px 0px;
 }
-
-.get-started {
-    display: flex;
-    justify-content: center;
+.g,
+.e,
+.t,
+.s,
+.a,
+.r,
+.d{
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    filter: drop-shadow(5px 1px 5px black);
 }
+    
+.g{
+    color: red;
+}
+.e{
+    color: orange;
+}
+.t{
+    color: yellow;
+}
+.s{
+    color: green;
+}
+.a{
+    color: blue;
+}
+.r{
+    color: indigo;
+}
+
 
 
 
@@ -67,7 +95,8 @@ img {
     width: 70%;
     margin-top: 50px;
     height: 400px;
-    padding: 0px 30px 0px 30px
+    padding: 0px 30px 0px 30px;
+    border-radius: 5%;
 }
 
 .certi-main button {
@@ -81,6 +110,11 @@ img {
 }
 .certi-main button:hover {
     /* background-color: #526D82; */
+    border: black solid;
+}
+.certi-main button:active {
+    background-color: red;
+    scale: 0.9; 
     border: black solid;
 }
 
@@ -120,7 +154,8 @@ img {
     overflow: hidden;
 }
 .edu-description:hover {
-    scale: 1.2;
+    /* scale: 1.1; */   
+    font-weight: bold;
     color: rgb(92, 111, 198);
 }
 
@@ -134,6 +169,13 @@ img {
     /* justify-content: center; */
     margin: 0px 0px 0px 20px;
     width: max-content;
+}
+.details b{
+    color: #D83F31;
+    font-size: 20px;
+}
+.details li{
+    color: #4E4FEB;
 }
 
 .mypic {
@@ -210,6 +252,7 @@ iframe {
 .whatsapp:hover .contact-img {
     /* opacity: 1; */
     scale: 0.8;
+    filter: drop-shadow(5px 1px 10px rgb(166, 158, 158));
 }
 
 input {
@@ -237,7 +280,8 @@ input {
 .inputfields {
     display: flex;
     /* justify-content: first baseline; */
-    border-style: outset;
+    border-style: hidden;
+    filter: drop-shadow(5px 5px 6px rgb(166, 158, 158));
     padding: 10px 0px 0px 0px;
     margin: 60px 100px 10px 100px;
     height: 300px;
