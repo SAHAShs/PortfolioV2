@@ -37,6 +37,9 @@ nav a:hover,
     /* color: #D83F31; */
     scale: 1.2;
 }
+nav a:active{
+    color: #D83F31;
+}
 
 img {
     width: 90px;
@@ -59,8 +62,9 @@ img {
 .d{
     font-size: 1.6rem;
     letter-spacing: 2px;
-    font-weight: bold;
-    filter: drop-shadow(5px 1px 5px black);
+    font-weight: bolder;
+    letter-spacing: 7px;
+    /* filter: drop-shadow(5px 1px 5px black); */
 }
     
 .g{
@@ -219,6 +223,9 @@ iframe {
     height: 62px;
     width: 66%;
 }
+input:invalid{
+    border: 1px solid red;
+}
 
 
 .contact {
@@ -289,7 +296,7 @@ input {
 
 
 .right {
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px 5px 20px;
     background-color: rgb(219, 217, 214);
     width: 100%;
 
@@ -307,6 +314,7 @@ textarea {
     width: 82%;
     border: hidden;
     border-radius: 7px;
+    padding: 10px;
     resize: none;
 
 }
@@ -324,6 +332,7 @@ textarea {
 
 #sub:hover {
     background-color: red;
+    cursor: progress;
 }
 #sub:active {
     background-color: rgb(246, 129, 129);
