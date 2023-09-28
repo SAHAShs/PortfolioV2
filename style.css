@@ -5,7 +5,13 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
+body{
+    /* background-image: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif'); */
+    background-image: url('images/home.avif');
+    /* background-image: url('website-hosting-concept-with-circuits_23-2149406782.avif'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .list-items {
     display: flex;
     /* justify-content: space-evenly; */
@@ -24,7 +30,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #9DB2BF;
+    color: #adc7d7;
     font-weight: bolder;
     font-size: 1.3rem;
 }
@@ -33,7 +39,7 @@ nav a:hover,
 .nav-items:hover 
 {
     text-decoration: double;
-    color: black;
+    color: rgb(255, 254, 254);
     /* color: #D83F31; */
     scale: 1.2;
 }
@@ -49,7 +55,7 @@ img {
 
 /***------------------------------------------------------- Home page ****/
 .home h1 {
-    color: #219C90;
+    color: #fff42a;
     font-size: 4rem;
     padding: 110px 0px 0px 0px;
 }
@@ -94,6 +100,11 @@ img {
     display: flex;
     justify-content: center;
 }
+.certificates{
+    background-image: url('images/certifi.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .img1 {
     width: 70%;
@@ -110,7 +121,7 @@ img {
     opacity: 0.7;
     border: none;
     margin-top: 250px;
-    background-color: #526D82;
+    background-color: #d9dfe2;
 }
 .certi-main button:hover {
     /* background-color: #526D82; */
@@ -143,8 +154,14 @@ img {
 }
 
 .education legend {
-    font-size: 1.2rem;
-    color: #D83F31;
+    font-size: 2rem;
+    color: #f91500;
+    font-weight: bolder;
+}
+.educations{
+    background-image: url('images/education.avif');
+    background-size: contain;
+    background-repeat: repeat-y;
 }
 
 .education {
@@ -156,11 +173,12 @@ img {
     font-size: 1rem;
     line-height: 20px;
     overflow: hidden;
+    color: aliceblue;
 }
 .edu-description:hover {
     /* scale: 1.1; */   
     font-weight: bold;
-    color: rgb(92, 111, 198);
+    color: rgb(0, 0, 0);
 }
 
 
@@ -173,13 +191,18 @@ img {
     /* justify-content: center; */
     margin: 0px 0px 0px 20px;
     width: max-content;
+    color: aliceblue;
+}
+.aboutme{
+    background-image: url('images/aboutme.avif');
+    background-size: cover;
 }
 .details b{
     color: #D83F31;
     font-size: 20px;
 }
 .details li{
-    color: #4E4FEB;
+    color: #ffffff;
 }
 
 .mypic {
@@ -224,7 +247,12 @@ iframe {
     width: 66%;
 }
 input:invalid{
-    border: 1px solid red;
+    border: 3px solid red;
+}
+.contacts{
+    background-image: url('images/contacts.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -250,6 +278,7 @@ input:invalid{
 .github:hover .notes,
 .whatsapp:hover .notes {
     opacity: 1;
+    color: aliceblue;
 }
 .mail:hover .contact-img,
 .linkedin:hover .contact-img,
@@ -259,14 +288,14 @@ input:invalid{
 .whatsapp:hover .contact-img {
     /* opacity: 1; */
     scale: 0.8;
-    filter: drop-shadow(5px 1px 10px rgb(166, 158, 158));
+    filter: drop-shadow(0px 0px 30px rgb(255, 240, 240));
 }
 
 input {
     border-radius: 7px;
     height: 30px;
     margin-left: 26px;
-    border-style: hidden;
+    border-style:3px solid black;
     /* border-width: 10px; */
     width: 100%;
 
@@ -288,7 +317,7 @@ input {
     display: flex;
     /* justify-content: first baseline; */
     border-style: hidden;
-    filter: drop-shadow(5px 5px 6px rgb(166, 158, 158));
+    /* filter: drop-shadow(5px 5px 6px rgb(166, 158, 158)); */
     padding: 10px 0px 0px 0px;
     margin: 60px 100px 10px 100px;
     height: 300px;
@@ -297,7 +326,7 @@ input {
 
 .right {
     margin: 20px 20px 5px 20px;
-    background-color: rgb(219, 217, 214);
+    /* background-color: rgb(109, 108, 106); */
     width: 100%;
 
 
@@ -316,6 +345,7 @@ textarea {
     border-radius: 7px;
     padding: 10px;
     resize: none;
+    
 
 }
 
@@ -336,7 +366,7 @@ textarea {
 }
 #sub:active {
     background-color: rgb(246, 129, 129);
-    scale: 1.2;
+    scale: 0.9;
 }
 
 
@@ -347,24 +377,31 @@ textarea {
     display: flex;
     /* width: 100%; */
     /* justify-content: center; */
-    border-style: dotted;
-    border-width: thin;
+    border-style: solid;
+    border-width: 1px;
     border-radius: 20px;
-    border-color: blue;
+    border-color: rgb(87, 87, 248);
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 .projects legend {
-    font-size: 1.2rem;
-    color: #D83F31;
+    font-size: 1.4rem;
+    color: #ff1500;
+}
+.projectworks{
+    /* background-image: url('office-supplies_23-2148103963.avif'); */
+    background-image: url('images/projects.avif');
+    background-size: contain;
+    background-repeat: repeat-y;
 }
 
 .projects p {
     text-align: justify;
     font-size: 1rem;
     line-height: 20px;
+    color: aliceblue;
 }
 
 .projects button {
