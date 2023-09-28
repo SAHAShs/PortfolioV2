@@ -1,4 +1,4 @@
-/***-------------------------------navigation bar*/
+/***-------------------------------navigation bar----------------------*/
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -6,15 +6,12 @@ nav {
     align-items: center;
 }
 body{
-    /* background-image: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif'); */
     background-image: url('images/home.avif');
-    /* background-image: url('website-hosting-concept-with-circuits_23-2149406782.avif'); */
     background-repeat: no-repeat;
     background-size: cover;
 }
 .list-items {
     display: flex;
-    /* justify-content: space-evenly; */
     overflow: hidden;
 }
 
@@ -40,7 +37,6 @@ nav a:hover,
 {
     text-decoration: double;
     color: rgb(255, 254, 254);
-    /* color: #D83F31; */
     scale: 1.2;
 }
 nav a:active{
@@ -53,7 +49,7 @@ img {
     padding: 0px 0px 0px 30px;
 }
 
-/***------------------------------------------------------- Home page ****/
+/***------------------------------------------------------- Home page--------------------- ****/
 .home h1 {
     color: #fff42a;
     font-size: 4rem;
@@ -70,7 +66,6 @@ img {
     letter-spacing: 2px;
     font-weight: bolder;
     letter-spacing: 7px;
-    /* filter: drop-shadow(5px 1px 5px black); */
 }
     
 .g{
@@ -92,10 +87,7 @@ img {
     color: indigo;
 }
 
-
-
-
-/******----------------------------------------certificate*****/
+/******----------------------------------------certificate---------------------------*****/
 .certi-main {
     display: flex;
     justify-content: center;
@@ -135,7 +127,7 @@ img {
 
 
 
-/*****--------------------------------------------education*********/
+/*****--------------------------------------------education--------------------------------******/
 .edu-img {
     padding: 0px;
 }
@@ -155,7 +147,7 @@ img {
 
 .education legend {
     font-size: 2rem;
-    color: #f91500;
+    color: #ffffff;
     font-weight: bolder;
 }
 .educations{
@@ -176,19 +168,15 @@ img {
     color: aliceblue;
 }
 .edu-description:hover {
-    /* scale: 1.1; */   
+    /* scale: 1.1;    */
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
 }
 
 
-/*******---------------------------------about me*********/
+/*******---------------------------------about me----------------------------------*******/
 .who,
 .description {
-    /* border: #4E4FEB; */
-    /* border-style: solid; */
-    /* display: flex; */
-    /* justify-content: center; */
     margin: 0px 0px 0px 20px;
     width: max-content;
     color: aliceblue;
@@ -219,7 +207,6 @@ img {
 }
 
 .section1 {
-    /* border-style: solid; */
     display: flex;
     padding: 20px 20px 20px 50px;
     line-height: 30px;
@@ -241,20 +228,22 @@ iframe {
     height: 200px;
 }
 
-/****************************************************contact***********/
+/*****-----------------------------------------------contact----------------------------******/
 .contact-img {
     height: 62px;
     width: 66%;
 }
 input:invalid{
-    border: 3px solid red;
+    border: 2px solid red;
+}
+input:valid{
+    border: 2px solid rgb(68, 255, 0);
 }
 .contacts{
     background-image: url('images/contacts.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 .contact {
     display: flex;
@@ -265,9 +254,7 @@ input:invalid{
 .notes {
     opacity: 0;
     position: sticky;
-    /* font-size: 2rem; */
     pointer-events: none;
-    /* background-color: rgb(115, 179, 243); */
     margin-left: 30px;
 }
 
@@ -286,7 +273,6 @@ input:invalid{
 .cv:hover .contact-img,
 .github:hover .contact-img,
 .whatsapp:hover .contact-img {
-    /* opacity: 1; */
     scale: 0.8;
     filter: drop-shadow(0px 0px 30px rgb(255, 240, 240));
 }
@@ -295,10 +281,15 @@ input {
     border-radius: 7px;
     height: 30px;
     margin-left: 26px;
-    border-style:3px solid black;
-    /* border-width: 10px; */
+    border: 3px solid rgb(39, 253, 1);
+    color: aliceblue;
+    background-color: transparent;
+    padding: 5px;
     width: 100%;
-
+}
+textarea::placeholder,
+input::placeholder{
+    color: #ffffff;
 }
 
 .responsehead {
@@ -306,7 +297,8 @@ input {
     border-style: hidden;
     padding: 100px 10px 10px 10px;
     text-align: center;
-    color: #4E4FEB;
+    color: #51d808;
+    animation: bounce 1.5s linear;
 }
 
 .responsehead h1 {
@@ -315,9 +307,7 @@ input {
 
 .inputfields {
     display: flex;
-    /* justify-content: first baseline; */
     border-style: hidden;
-    /* filter: drop-shadow(5px 5px 6px rgb(166, 158, 158)); */
     padding: 10px 0px 0px 0px;
     margin: 60px 100px 10px 100px;
     height: 300px;
@@ -326,33 +316,29 @@ input {
 
 .right {
     margin: 20px 20px 5px 20px;
-    /* background-color: rgb(109, 108, 106); */
     width: 100%;
-
-
 }
 
 .left {
     display: flex;
     padding: 50px 100px 20px 10px;
-    /* justify-content: center; */
 }
 
 textarea {
     margin: 1px 0px 0px 35px;
-    width: 82%;
-    border: hidden;
-    border-radius: 7px;
+    width: 80%;
+    border-radius: 10px;
     padding: 10px;
     resize: none;
-    
-
+    background-color: transparent;
+    border: 2px solid rgb(39, 253, 1);
+    color: #ffffff;
 }
 
 #sub {
     width: 10%;
     border-style: hidden;
-    background-color: #4E4FEB;
+    background-color: #1ac504;
     color: aliceblue;
     margin: 20px 30px;
     border-radius: 30px;
@@ -372,11 +358,9 @@ textarea {
 
 
 
-/*******---------------------------------------projects*********/
+/*******---------------------------------------projects----------------------*********/
 .projects fieldset {
     display: flex;
-    /* width: 100%; */
-    /* justify-content: center; */
     border-style: solid;
     border-width: 1px;
     border-radius: 20px;
@@ -391,7 +375,6 @@ textarea {
     color: #ff1500;
 }
 .projectworks{
-    /* background-image: url('office-supplies_23-2148103963.avif'); */
     background-image: url('images/projects.avif');
     background-size: contain;
     background-repeat: repeat-y;
@@ -409,7 +392,6 @@ textarea {
     border-style: hidden;
     background-color: #4E4FEB;
     color: aliceblue;
-    /* margin: 20px 30px; */
     border-radius: 30px;
     font-weight: bold;
     height: 35px;
