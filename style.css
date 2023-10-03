@@ -286,6 +286,7 @@ input {
     background-color: transparent;
     padding: 5px;
     width: 100%;
+    outline: none;
 }
 textarea::placeholder,
 input::placeholder{
