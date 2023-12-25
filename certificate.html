@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate's</title>
     <link rel="icon" href="images/certificate.png">
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="certificates">
     <nav>
         <div class="image">
-            <!-- <img src="images/S.png" alt=""> -->
+            <img src="images/S.png" alt="">
         </div>
         <div class="navigate cert-nav">
             <ul class="list-items">
                 <li class="nav-items"><a href="index.html">Home</a></li>
-                <li class="nav-items"><a href="aboutme.html" >About Me</a></li>
+                <li class="nav-items"><a href="aboutme.html">About Me</a></li>
                 <li class="nav-items"><a href="education.html">Education</a></li>
                 <li class="nav-items"><a href="projects.html">Projects</a></li>
                 <li class="nav-items"><a href="contact.html">Contact Me</a></li>
@@ -24,32 +26,35 @@
     </nav>
 
     <main class="certi-main">
-        <button type="submit" onclick="moveback()"><b><</b></button>
-        <img src="certificates/certificate_Basic Coding Course_337045.png" alt="" class="img1" onmouseout="start()" onmouseover="stop()" id="img1">
-        <button type="submit"onclick="movefront()"><b>></b></button>
-
-    <script type="text/javascript">
-        var arr=new Array("certificates/certificate_Basic Coding Course_337045.png","certificates/certificate_C Programming_337045.png","certificates/javascript-essentials-1.png","certificates/certificate_Git_337045.png","certificates/certificate_Intermediate Coding in Java_337045.png","certificates/certificate_Java Script Es6_337045.png","certificates/certificate_SQL_337045.png","certificates/Screenshot 2023-09-20 211517.png","certificates/Screenshot 2023-09-20 211333.png","certificates/javaoops_GL.jpg","certificates/java_GL.jpg","certificates/cn1.png","certificates/h.png");
-        var i=0;
-        var ref;
-        function movefront(){
-            document.images[0].src=arr[i++];
-            if(i>arr.length-1){
-                i=0;
-            }
-
-        }
-        function moveback(){
-            document.images[0].src=arr[i--];
-            if(i<=0){
-                i=arr.length-1;
-            }
-
-        }
-    </script>
+        <!-- <button type="submit" onclick="moveback()"><b>&LessLess;</b></button> -->
+        <img src="certificates/certificate_Basic Coding Course_337045.png" alt="" class="img1" id="img1" onmouseover="stopAutoChange()" onmouseout="startAutoChange()">
+        <!-- <button type="submit" onclick="movefront()"><b>&GreaterGreater;</b></button> -->
     
-
+        <script type="text/javascript">
+            var certificateImages = ["certificates/certificate_Basic Coding Course_337045.png", "certificates/certificate_C Programming_337045.png", "certificates/javascript-essentials-1.png", "certificates/certificate_Git_337045.png", "certificates/certificate_Intermediate Coding in Java_337045.png", "certificates/certificate_Java Script Es6_337045.png", "certificates/certificate_SQL_337045.png", "certificates/Screenshot 2023-09-20 211517.png", "certificates/Screenshot 2023-09-20 211333.png", "certificates/javaoops_GL.jpg", "certificates/java_GL.jpg", "certificates/cn1.png", "certificates/h.png", "certificates/image.webp"];
+            var currentIndex = 0;
+            var autoChangeInterval;
+        
+            function changeCertificateImage() {
+                document.getElementById("img1").src = certificateImages[currentIndex];
+                currentIndex = (currentIndex + 1) % certificateImages.length;
+            }
+        
+            function startAutoChange() {
+                autoChangeInterval = setInterval(changeCertificateImage, 1500); // Change every 2 seconds
+            }
+        
+            function stopAutoChange() {
+                clearInterval(autoChangeInterval);
+            }
+        
+            // Start automatic image change when the page loads
+            window.onload = startAutoChange;
+        </script>
+        
     </main>
     
+
 </body>
+
 </html>

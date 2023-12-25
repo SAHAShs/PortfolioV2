@@ -12,18 +12,17 @@ body{
 }
 .list-items {
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
+    gap:54px;
+}
+.navigate{
+    margin-right:30px;
 }
 
 .nav-items {
-    padding: 0px 54px 0px 0px;
     list-style: none;
 }
 
-.cert-nav .nav-items {
-    padding: 20px 54px 0px 0px;
-    list-style: none;
-}
 
 nav a {
     text-decoration: none;
@@ -185,6 +184,7 @@ img {
     background-image: url('images/aboutme.avif');
     background-size: cover;
 }
+.section3 b,
 .details b{
     color: #D83F31;
     font-size: 20px;
@@ -221,11 +221,39 @@ img {
 .section2 ul {
     list-style: none;
     line-height: 30px;
+    font-size: 1.1rem;
+
 }
 
 iframe {
     width: 30vw;
     height: 200px;
+}
+
+.section3 {
+    padding: 20px;
+    margin-left: 120px;
+}
+
+.skills h2 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.skills li b {
+    font-weight: bold;
+    margin-right: 5px;
 }
 
 /*****-----------------------------------------------contact----------------------------******/
